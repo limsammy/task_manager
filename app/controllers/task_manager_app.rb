@@ -2,6 +2,6 @@ class TaskManagerApp < Sinatra::Base
   set :root, File.expand_path("..", __dir__)
 
   get '/' do
-    'Hello, world!'
+    erb :dashboard
   end
 end
